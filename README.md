@@ -12,7 +12,7 @@ It uses a **frame similarity–based algorithm** that analyzes visual similarity
 
 ## ⚙️ Core Concept
 
-In a normal video, consecutive frames are visually similar because they capture small changes in motion.  
+In a normal video, consecutive frames are visually similar because they capture small motion changes.  
 When frames are shuffled, that continuity breaks.  
 This algorithm computes **frame-to-frame similarity** and arranges frames so that the overall visual change is minimal — recreating the correct playback order.
 
@@ -62,5 +62,4 @@ The direction with **lower total discontinuity** (sum of differences between con
 Install the required Python packages before running:
 
 ```bash
-pip install opencv-python tqdm numpy
-# tecdia-project
+pip install -r requirements.txt
